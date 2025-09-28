@@ -1,0 +1,263 @@
+.topicsGrid {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 20px;
+   margin-bottom: 80px;
+}
+
+.topicsRow {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 25px;
+   margin-bottom: 25px;
+}
+
+.topicCard {
+   background: white;
+   border-radius: 12px;
+   overflow: hidden;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+   transition: all 0.3s ease;
+   cursor: pointer;
+   height: 320px;
+   display: flex;
+   flex-direction: column;
+}
+
+.topicCard:hover {
+   transform: translateY(-8px);
+   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.imageContainer {
+   position: relative;
+   height: 180px;
+   overflow: hidden;
+}
+
+.topicImage {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   transition: transform 0.3s ease;
+}
+
+.topicCard:hover .topicImage {
+   transform: scale(1.05);
+}
+
+.overlay {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+   padding: 20px 15px 15px;
+}
+
+.topicTitle {
+   color: white;
+   font-size: 1.3rem;
+   font-weight: 600;
+   margin: 0;
+}
+
+.cardContent {
+   padding: 20px 15px;
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.topicDescription {
+   color: #666;
+   font-size: 0.9rem;
+   line-height: 1.5;
+   margin: 0 0 15px 0;
+   flex: 1;
+}
+
+.readMoreBtn {
+   background-color: #007bff;
+   color: white;
+   border: none;
+   padding: 8px 16px;
+   border-radius: 6px;
+   font-size: 0.9rem;
+   font-weight: 500;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+   align-self: flex-start;
+}
+
+.readMoreBtn:hover {
+   background-color: #0056b3;
+}
+
+/* Full width topic */
+.fullWidthTopic {
+   width: 100%;
+}
+
+.fullWidthCard {
+   background: white;
+   border-radius: 12px;
+   overflow: hidden;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+   transition: all 0.3s ease;
+   cursor: pointer;
+   height: 250px;
+}
+
+.fullWidthCard:hover {
+   transform: translateY(-4px);
+   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.fullWidthImageContainer {
+   position: relative;
+   height: 100%;
+   overflow: hidden;
+}
+
+.fullWidthImage {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   transition: transform 0.3s ease;
+}
+
+.fullWidthCard:hover .fullWidthImage {
+   transform: scale(1.02);
+}
+
+.fullWidthOverlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4));
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 40px;
+}
+
+.fullWidthContent {
+   text-align: center;
+   color: white;
+   max-width: 600px;
+}
+
+.fullWidthTitle {
+   font-size: 2.2rem;
+   font-weight: 700;
+   margin: 0 0 15px 0;
+}
+
+.fullWidthDescription {
+   font-size: 1.1rem;
+   line-height: 1.6;
+   margin: 0 0 25px 0;
+   opacity: 0.9;
+}
+
+.fullWidthReadMoreBtn {
+   background-color: #007bff;
+   color: white;
+   border: none;
+   padding: 12px 30px;
+   border-radius: 8px;
+   font-size: 1rem;
+   font-weight: 600;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+}
+
+.fullWidthReadMoreBtn:hover {
+   background-color: #0056b3;
+   transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+   .topicsRow {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+   }
+}
+
+@media (max-width: 768px) {
+   .topicsGrid {
+      padding: 0 15px;
+      margin-bottom: 60px;
+   }
+
+   .topicsRow {
+      grid-template-columns: 1fr;
+      gap: 20px;
+   }
+
+   .topicCard {
+      height: 300px;
+   }
+
+   .fullWidthCard {
+      height: 200px;
+   }
+
+   .fullWidthOverlay {
+      padding: 20px;
+   }
+
+   .fullWidthTitle {
+      font-size: 1.8rem;
+   }
+
+   .fullWidthDescription {
+      font-size: 1rem;
+   }
+}
+
+@media (max-width: 480px) {
+   .topicCard {
+      height: 280px;
+   }
+
+   .imageContainer {
+      height: 160px;
+   }
+
+   .cardContent {
+      padding: 15px;
+   }
+
+   .topicTitle {
+      font-size: 1.1rem;
+   }
+
+   .topicDescription {
+      font-size: 0.85rem;
+   }
+
+   .fullWidthCard {
+      height: 180px;
+   }
+
+   .fullWidthTitle {
+      font-size: 1.5rem;
+   }
+
+   .fullWidthDescription {
+      font-size: 0.9rem;
+   }
+
+   .fullWidthReadMoreBtn {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+   }
+}

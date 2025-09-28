@@ -1,0 +1,123 @@
+.header {
+   width: 100%;
+   background-color: white;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   position: sticky;
+   top: 0;
+   z-index: 100;
+}
+
+.headerContent {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 2rem;
+   height: 80px;
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+.logo {
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+   transition: transform 0.3s ease;
+}
+
+.logo:hover {
+   transform: scale(1.05);
+}
+
+.logoImg {
+   width: 100px;
+   height: 180px;
+   object-fit: contain;
+}
+
+.navbar {
+   flex: 1;
+   display: flex;
+   justify-content: center;
+   max-width: 800px;
+}
+
+.navList {
+   display: flex;
+   list-style: none;
+   gap: 2rem;
+   margin: 0;
+   padding: 0;
+   height: 50px;
+   align-items: center;
+}
+
+.navItem {
+   height: 100%;
+   display: flex;
+   align-items: center;
+}
+
+.navLink {
+   text-decoration: none;
+   color: #333;
+   font-weight: 500;
+   font-size: 16px;
+   padding: 0.5rem 1rem;
+   border-radius: 4px;
+   transition: all 0.3s ease;
+   white-space: nowrap;
+}
+
+.navLink:hover {
+   background-color: #f0f0f0;
+   color: #007bff;
+}
+
+.actionButtons {
+   display: flex;
+   gap: 1rem;
+   align-items: center;
+}
+
+.searchBtn,
+.accountBtn {
+   background: none;
+   border: 2px solid #ddd;
+   border-radius: 50%;
+   width: 40px;
+   height: 40px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   color: #666;
+}
+
+.searchBtn:hover,
+.accountBtn:hover {
+   border-color: #007bff;
+   color: #007bff;
+   background-color: #f8f9fa;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+   .headerContent {
+      padding: 0 1rem;
+   }
+
+   .logoImg {
+      width: 150px;
+      height: 108px;
+   }
+
+   .navList {
+      gap: 1rem;
+   }
+
+   .navLink {
+      font-size: 14px;
+      padding: 0.25rem 0.5rem;
+   }
+}

@@ -1,0 +1,12 @@
+.secondSection {
+   width: 100%;
+   background-color: #ffffff;
+   padding: 40px 20px;
+   min-height: 100vh;
+}
+
+@media (max-width: 768px) {
+   .secondSection {
+      padding: 20px 15px;
+   }
+}

@@ -1,0 +1,204 @@
+.loginRecommendContainer {
+   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+   padding: 80px 20px;
+   margin-top: 60px;
+}
+
+.content {
+   max-width: 1200px;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 60px;
+   align-items: center;
+}
+
+.textSection {
+   padding-right: 20px;
+}
+
+.title {
+   font-size: 2.5rem;
+   font-weight: 700;
+   color: #333;
+   margin-bottom: 25px;
+   line-height: 1.2;
+}
+
+.description {
+   font-size: 1.1rem;
+   color: #666;
+   line-height: 1.7;
+   margin-bottom: 30px;
+}
+
+.benefits {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+
+.benefits li {
+   position: relative;
+   padding: 8px 0 8px 30px;
+   font-size: 1rem;
+   color: #555;
+   line-height: 1.5;
+}
+
+.benefits li::before {
+   content: '✓';
+   position: absolute;
+   left: 0;
+   top: 8px;
+   color: #28a745;
+   font-weight: bold;
+   font-size: 1.2rem;
+}
+
+.actionSection {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.ctaBox {
+   background: white;
+   padding: 40px 35px;
+   border-radius: 16px;
+   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+   text-align: center;
+   width: 100%;
+   max-width: 400px;
+}
+
+.ctaTitle {
+   font-size: 1.8rem;
+   font-weight: 600;
+   color: #333;
+   margin-bottom: 15px;
+}
+
+.ctaDescription {
+   font-size: 1rem;
+   color: #666;
+   margin-bottom: 30px;
+   line-height: 1.6;
+}
+
+.buttonGroup {
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+   margin-bottom: 20px;
+}
+
+.signUpBtn {
+   background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+   color: white;
+   border: none;
+   padding: 15px 30px;
+   border-radius: 8px;
+   font-size: 1.1rem;
+   font-weight: 600;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   text-transform: uppercase;
+   letter-spacing: 0.5px;
+}
+
+.signUpBtn:hover {
+   transform: translateY(-2px);
+   box-shadow: 0 6px 20px rgba(0, 123, 255, 0.3);
+}
+
+.loginBtn {
+   background: transparent;
+   color: #007bff;
+   border: 2px solid #007bff;
+   padding: 13px 30px;
+   border-radius: 8px;
+   font-size: 1.1rem;
+   font-weight: 600;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   text-transform: uppercase;
+   letter-spacing: 0.5px;
+}
+
+.loginBtn:hover {
+   background: #007bff;
+   color: white;
+   transform: translateY(-2px);
+}
+
+.freeText {
+   font-size: 0.9rem;
+   color: #28a745;
+   font-weight: 500;
+   margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+   .content {
+      grid-template-columns: 1fr;
+      gap: 40px;
+      text-align: center;
+   }
+
+   .textSection {
+      padding-right: 0;
+   }
+
+   .title {
+      font-size: 2.2rem;
+   }
+}
+
+@media (max-width: 768px) {
+   .loginRecommendContainer {
+      padding: 60px 15px;
+   }
+
+   .title {
+      font-size: 2rem;
+   }
+
+   .description {
+      font-size: 1rem;
+   }
+
+   .ctaBox {
+      padding: 30px 25px;
+      margin: 0 10px;
+   }
+
+   .ctaTitle {
+      font-size: 1.5rem;
+   }
+}
+
+@media (max-width: 480px) {
+   .loginRecommendContainer {
+      padding: 40px 15px;
+   }
+
+   .title {
+      font-size: 1.8rem;
+   }
+
+   .ctaBox {
+      padding: 25px 20px;
+   }
+
+   .buttonGroup {
+      gap: 12px;
+   }
+
+   .signUpBtn,
+   .loginBtn {
+      padding: 12px 25px;
+      font-size: 1rem;
+   }
+}

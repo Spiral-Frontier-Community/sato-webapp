@@ -1,0 +1,97 @@
+.moreInfoContainer {
+   width: 100%;
+   margin-top: 20px;
+}
+
+.moreInfoToggle {
+   background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+   color: white;
+   border: none;
+   padding: 12px 24px;
+   border-radius: 25px;
+   font-size: 1rem;
+   font-weight: 500;
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   gap: 8px;
+   transition: all 0.3s ease;
+   margin: 0 auto;
+}
+
+.moreInfoToggle:hover {
+   transform: translateY(-2px);
+   box-shadow: 0 8px 20px rgba(0, 123, 255, 0.3);
+}
+
+.toggleText {
+   text-transform: uppercase;
+   letter-spacing: 0.5px;
+}
+
+.toggleIcon {
+   transition: transform 0.3s ease;
+}
+
+.toggleIcon.rotated {
+   transform: rotate(180deg);
+}
+
+.moreInfoContent {
+   max-height: 0;
+   overflow: hidden;
+   transition: all 0.5s ease;
+   opacity: 0;
+}
+
+.moreInfoContent.expanded {
+   max-height: 500px;
+   opacity: 1;
+   margin-top: 30px;
+}
+
+.moreInfoText {
+   padding: 25px;
+   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+   border-radius: 15px;
+   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.moreInfoText p {
+   font-size: 1.1rem;
+   color: #555;
+   line-height: 1.7;
+   margin: 0;
+   text-align: left;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+   .moreInfoToggle {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+   }
+
+   .moreInfoText {
+      padding: 20px;
+   }
+
+   .moreInfoText p {
+      font-size: 1rem;
+   }
+}
+
+@media (max-width: 480px) {
+   .moreInfoToggle {
+      padding: 8px 16px;
+      font-size: 0.85rem;
+   }
+
+   .moreInfoText {
+      padding: 15px;
+   }
+
+   .moreInfoText p {
+      font-size: 0.95rem;
+   }
+}
