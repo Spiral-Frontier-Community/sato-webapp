@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import CommentsData from '../data/CommentsData';
 import styles from './componentStyles/Comments.module.css';
+import rating_bottle from '../assets/rating_bottle.png';
 
 const Comments = ({ productId, productName }) => {
    const [selectedComment, setSelectedComment] = useState(null);
@@ -25,7 +26,7 @@ const Comments = ({ productId, productName }) => {
       return Array.from({ length: rating }, (_, index) => (
          <img
             key={index}
-            src="/src/assets/rating_bottle.png"
+            src={rating_bottle}
             alt="Rating"
             className={styles.ratingBottle}
             onError={(e) => {
