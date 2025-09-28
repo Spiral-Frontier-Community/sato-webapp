@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import styles from './componentStyles/Header.module.css';
+import logo from '../assets/logo.png';
 
 const Header = () => {
    const navigate = useNavigate();
@@ -23,7 +24,7 @@ const Header = () => {
             {/* Logo */}
             <div className={styles.logo} onClick={handleLogoClick}>
                <img
-                  src="../src/assets/logo.png"
+                  src={logo}
                   alt="Logo"
                   className={styles.logoImg}
                   onError={(e) => {
