@@ -23,7 +23,7 @@ const Header = () => {
             {/* Logo */}
             <div className={styles.logo} onClick={handleLogoClick}>
                <img
-                  src="/src/assets/logo.png"
+                  src="../src/assets/logo.png"
                   alt="Logo"
                   className={styles.logoImg}
                   onError={(e) => {
