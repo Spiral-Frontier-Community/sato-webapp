@@ -1,0 +1,35 @@
+.storytellingContainer {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 80vh;
+  position: relative;
+}
+
+.title {
+  text-align: center;
+  font-size: 42px;
+  color: white;
+  margin-bottom: 80px;
+  font-weight: 300;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.timelineLine {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(to bottom, #fff 0%, #e3f2fd 100%);
+  transform: translateX(-50%);
+  z-index: 1;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.3);
+}
