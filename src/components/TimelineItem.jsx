@@ -1,14 +1,16 @@
-import React from 'react';
-import styles from './componentStyles/TimelineItem.module.css';
+import React from "react";
+import styles from "./componentStyles/TimelineItem.module.css";
 
 function TimelineItem({ data }) {
   const { year, title, description, isRight } = data;
 
   return (
-    <div className={`${styles.timelineItem} ${isRight ? styles.right : styles.left}`}>
+    <div
+      className={`${styles.timelineItem} ${isRight ? styles.right : styles.left}`}
+    >
       <div className={styles.imageContainer}>
-        <img 
-          src="/src/assets/logo.png" 
+        <img
+          src="https://placehold.co/600x400?text=Timeline+Item"
           alt={`${title} - ${year}`}
           className={styles.timelineImage}
         />

@@ -1,8 +1,8 @@
 .timelineItem {
   position: relative;
-  margin-bottom: 100px;
+  margin-bottom: 10px;
   width: 100%;
-  min-height: 600px;
+  min-height: 300px;
   display: flex;
   align-items: flex-start;
 }
@@ -10,12 +10,13 @@
 .timelineItem.right {
   justify-content: flex-end;
   padding-right: calc(50% + 40px);
+  margin-top: 100px;
 }
 
 .timelineItem.left {
   justify-content: flex-start;
   padding-left: calc(50% + 40px);
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
 .imageContainer {
@@ -24,7 +25,7 @@
   height: 200px;
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   border: 4px solid white;
   background: white;
 }
@@ -48,14 +49,14 @@
 .contentContainer {
   background: white;
   border-radius: 15px;
-  padding: 40px;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  padding: 10px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
   max-width: 500px;
   min-width: 500px;
   min-height: 300px;
   position: relative;
   z-index: 2;
-  border: 1px solid rgba(255,255,255,0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .yearBadge {
@@ -111,27 +112,27 @@
     min-height: 400px;
     margin-bottom: 60px;
   }
-  
+
   .timelineItem.right,
   .timelineItem.left {
     padding: 0 20px;
     justify-content: center;
     margin-top: 0;
   }
-  
+
   .contentContainer {
     max-width: 100%;
     min-width: auto;
     min-height: 200px;
   }
-  
+
   .imageContainer {
     position: relative;
     width: 150px;
     height: 150px;
     margin: 0 auto 20px;
   }
-  
+
   .timelineItem.right .imageContainer,
   .timelineItem.left .imageContainer {
     position: relative;
